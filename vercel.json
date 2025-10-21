@@ -1,0 +1,9 @@
+{
+  "functions": {
+    "api/**/*.ts": { "runtime": "nodejs18.x" }
+  },
+  "crons": [
+    { "path": "/api/renewals/run", "schedule": "0 6 * * *" },
+    { "path": "/api/renewals/run", "schedule": "0 12 * * *" }
+  ]
+}
